@@ -11,4 +11,6 @@ cat <<- EOF > file
 ^A ^E ^K
 # 后台执行 回到前台 查看后台任务
 ^Z fg bg
+# 集合操作，创建多个文件
+touch file{1..3}.dat
 ```
