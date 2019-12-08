@@ -1,4 +1,4 @@
-#!/bin/bash     #设置默认的执行环境
+#!/bin/bash     # 设置默认的执行环境
 
 echo "hello world"
 
