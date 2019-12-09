@@ -19,9 +19,11 @@
 # cat >out <input # 从 input 文件中读取写入到 out 文件中
 # cat >out <<EOF # 从键盘读入写到 out 文件中
 
+# command &>/dev/null # 等同于 command >&/dev/null, 将 stdout 和 errout 都重定向到黑洞(都不可见)
 # command >/dev/null 2>&1 # stdout 重定向到黑洞, errout 重定向到 stdout(都不可见)
 # command 2>&1 >/dev/null # errout 重定向到 stdout(屏幕), stdout 重定向到黑洞(不可见)
 # command 1>/dev/null 2>/dev/null # 文件被打开了两次，两个文件描述符会抢占性的往文件中输出内容(不要使用该方法)
 #
 # eg: 
 # nohup java -jar xxx.jar >/dev/null 2>&1 & # 丢弃日志并在后台执行
+# nohup java -jar xxx.jar &>/dev/null & # 同上
