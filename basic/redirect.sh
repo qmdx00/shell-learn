@@ -2,9 +2,9 @@
 #
 # 管道重定向操作
 #
-# 标准输入(standard input)     0	从键盘获得输入  /proc/self/fd/0
-# 标准输出(standard output)    1	输出到屏幕(即控制台)    /proc/self/fd/1
-# 错误输出(error output)       2	输出到屏幕(即控制台)    /proc/self/fd/2
+# 标准输入(standard input)     0	从键盘获得输入
+# 标准输出(standard output)    1	输出到屏幕(即控制台)
+# 错误输出(error output)       2	输出到屏幕(即控制台)
 
 # command >file  # 等同于 command 1>file, 将 stdout 重定向到 file
 # command >>file # 等同于 command 1>>file, 将 stdout 重定向到 file (追加)
