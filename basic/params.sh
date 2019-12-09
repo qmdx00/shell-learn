@@ -13,7 +13,7 @@ if [[ ! -f $1 ]]; then
 fi
 
 for ip in $(cat $1); do
-    ping -c 1 $ip &> /dev/null
+    ping -c 1 $ip &>/dev/null
     if [[ $? -eq 0 ]]; then
         echo "$ip is up"
     else 

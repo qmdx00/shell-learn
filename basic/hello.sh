@@ -5,7 +5,7 @@ str="hello"
 echo "$str world"
 
 # 用 python 执行
-/usr/bin/python <<- EOF
+/usr/bin/python <<-EOF
 print("$str python")
 EOF
 
