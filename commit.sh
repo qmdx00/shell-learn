@@ -10,7 +10,7 @@ if [[ ! $# -eq 1 ]]; then
     echo "usage: $(basename $0) [<commit message>]"
     exit
 else
-    git add . && git commit -m $1 && git push
+    git add . && git commit -m "$1" && git push
     if [[ $? -eq 0 ]]; then
         echo "commit successful ..."
     else 
