@@ -12,9 +12,9 @@ if [[ ! $# -eq 1 ]]; then
 else
     git add . && git commit -m "$1" && git push &>/dev/null
     if [[ $? -eq 0 ]]; then
-        echo "commit successful ..."
+        echo -e "commit successful ...\a"
     else 
-        echo "commit failed ..."
+        echo -e "commit failed ...\a"
     fi
 fi
 
