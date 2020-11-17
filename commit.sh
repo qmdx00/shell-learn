@@ -17,5 +17,3 @@ else
         echo -e "commit failed ...\a"
     fi
 fi
-
-
